@@ -55,6 +55,8 @@ The current logical structure of the XML schema of TextGrid files is pictured be
 </praat>
 ```
 
+The example data originates from the [Phonetic Corpus of Estonian Spontaneous Speech](http://www.keel.ut.ee/en/languages-resourceslanguages-resources/phonetic-corpus-estonian-spontaneous-speech) (direct link to the [search engine](http://www.murre.ut.ee/otsing/ekskfk.php?select%5B0%5D%5Blayer%5D=word&select%5B0%5D%5Blogic%5D=REGEXP&select%5B0%5D%5Btext%5D=miski&korpused%5B0%5D=dialoogid&korpused%5B1%5D=monoloogid&limit=50&submit=Otsi)).
+
 ## How to parse/unparse TextGrid to XML
 
 The DFDL schema has been developed and tested using the open source tool [Daffodil](https://opensource.ncsa.illinois.edu/confluence/display/DFDL).
