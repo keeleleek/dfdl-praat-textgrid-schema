@@ -53,7 +53,7 @@
         <xs:complexType>
           <xs:sequence> <!--  dfdl:separator="%NL;" dfdl:separatorPosition="infix" -->
             <xs:element name="item"
-              dfdl:initiator="%WSP*;item%WSP*;"
+              dfdl:initiator="%HT;item%WSP*;"
               minOccurs="0" maxOccurs="unbounded"
               dfdl:occursCountKind="parsed">
               <xs:complexType>
@@ -63,23 +63,23 @@
                     dfdl:terminator="]:%NL;"
                     />
                   <xs:element name="class" type="xs:string"
-                    dfdl:initiator="%WSP*;class%WSP*;=%WSP*;&quot;"
+                    dfdl:initiator="%HT;%HT;class%WSP*;=%WSP*;&quot;"
                     dfdl:terminator="&quot;%NL;"
                   />
                   <xs:element name="name" type="xs:string"
-                    dfdl:initiator="%WSP*;name%WSP*;=%WSP*;&quot;"
+                    dfdl:initiator="%HT;%HT;name%WSP*;=%WSP*;&quot;"
                     dfdl:terminator="&quot;%NL;"
                   />
                   <xs:element name="xMin" type="xs:decimal"
-                    dfdl:initiator="%WSP*;xmin%WSP*;=%WSP*;"
+                    dfdl:initiator="%HT;%HT;xmin%WSP*;=%WSP*;"
                     dfdl:terminator="%NL;"
                   />
                   <xs:element name="xMax" type="xs:decimal"
-                    dfdl:initiator="%WSP*;xmax%WSP*;=%WSP*;"
+                    dfdl:initiator="%HT;%HT;xmax%WSP*;=%WSP*;"
                     dfdl:terminator="%NL;"
                   />
                   <xs:element name="intervalsSize" type="xs:integer"
-                    dfdl:initiator="%WSP*;intervals:%WSP*;size%WSP*;=%WSP*;"
+                    dfdl:initiator="%HT;%HT;intervals:%WSP*;size%WSP*;=%WSP*;"
                     dfdl:terminator="%NL;"
                   />
                   <xs:element name="intervals">
@@ -91,19 +91,19 @@
                           <xs:complexType>
                             <xs:sequence>
                               <xs:element name="intervalNum" type="xs:integer"
-                                dfdl:initiator="%WSP*;intervals%WSP*;["
+                                dfdl:initiator="%HT;%HT;intervals%WSP*;["
                                 dfdl:terminator="]:%NL;">
                               </xs:element>
                               <xs:element name="xMin" type="xs:decimal"
-                                dfdl:initiator="%WSP*;xmin%WSP*;=%WSP*;"
+                                dfdl:initiator="%HT;%HT;%HT;xmin%WSP*;=%WSP*;"
                                 dfdl:terminator="%NL;"
                               />
                               <xs:element name="xMax" type="xs:decimal"
-                                dfdl:initiator="%WSP*;xmax%WSP*;=%WSP*;"
+                                dfdl:initiator="%HT;%HT;%HT;xmax%WSP*;=%WSP*;"
                                 dfdl:terminator="%NL;"
                               />
                               <xs:element name="text" type="xs:string"
-                                dfdl:initiator="%WSP*;text%WSP*;=%WSP*;&quot;"
+                                dfdl:initiator="%HT;%HT;%HT;text%WSP*;=%WSP*;&quot;"
                                 dfdl:terminator="&quot;%NL;"
                               />
                             </xs:sequence>
