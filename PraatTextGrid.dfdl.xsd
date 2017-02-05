@@ -36,12 +36,12 @@
         dfdl:terminator="&quot;%NL;%NL;"
       />
       <!-- the global start time -->
-      <xs:element name="xMin" type="xs:decimal"
+      <xs:element name="xMin" type="xs:double"
         dfdl:initiator="xmin%WSP*;=%WSP*;"
         dfdl:terminator="%NL;"
       />
       <!-- the global end time -->
-      <xs:element name="xMax" type="xs:decimal"
+      <xs:element name="xMax" type="xs:double"
         dfdl:initiator="xmax%WSP*;=%WSP*;"
         dfdl:terminator="%NL;"
       />
@@ -84,12 +84,12 @@
                     dfdl:terminator="&quot;%NL;"
                   />
                   <!-- the items global start time -->
-                  <xs:element name="xMin" type="xs:decimal"
+                  <xs:element name="xMin" type="xs:double"
                     dfdl:initiator="%HT;%HT;xmin%WSP*;=%WSP*;"
                     dfdl:terminator="%NL;"
                   />
                   <!-- the items global end time -->
-                  <xs:element name="xMax" type="xs:decimal"
+                  <xs:element name="xMax" type="xs:double"
                     dfdl:initiator="%HT;%HT;xmax%WSP*;=%WSP*;"
                     dfdl:terminator="%NL;"
                   />
@@ -115,12 +115,12 @@
                                 dfdl:terminator="]:%NL;">
                               </xs:element>
                               <!-- the start time of the interval -->
-                              <xs:element name="xMin" type="xs:decimal"
+                              <xs:element name="xMin" type="xs:double"
                                 dfdl:initiator="%HT;%HT;%HT;xmin%WSP*;=%WSP*;"
                                 dfdl:terminator="%NL;"
                               />
                               <!-- the end time of the interval -->
-                              <xs:element name="xMax" type="xs:decimal"
+                              <xs:element name="xMax" type="xs:double"
                                 dfdl:initiator="%HT;%HT;%HT;xmax%WSP*;=%WSP*;"
                                 dfdl:terminator="%NL;"
                               />
