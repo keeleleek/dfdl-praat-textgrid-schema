@@ -28,32 +28,32 @@
     <xs:sequence>
       <!-- the type of the Praat file -->
       <xs:element name="fileType" type="xs:string"
-        dfdl:initiator="File%WSP*;type%WSP*;=%WSP*;&quot;"
+        dfdl:initiator="File%WSP+;type%WSP+;=%WSP+;&quot;"
         dfdl:terminator="&quot;%NL;"
       />
       <!-- the object class of the Praat file -->
       <xs:element name="objectClass" type="xs:string"
-        dfdl:initiator="Object%WSP*;class%WSP*;=%WSP*;&quot;"
+        dfdl:initiator="Object%WSP+;class%WSP+;=%WSP+;&quot;"
         dfdl:terminator="&quot;%NL;%NL;"
       />
       <!-- the global start time -->
       <xs:element name="xMin" type="xs:double"
-        dfdl:initiator="xmin%WSP*;=%WSP*;"
+        dfdl:initiator="xmin%WSP+;=%WSP+;"
         dfdl:terminator="%NL;"
       />
       <!-- the global end time -->
       <xs:element name="xMax" type="xs:double"
-        dfdl:initiator="xmax%WSP*;=%WSP*;"
+        dfdl:initiator="xmax%WSP+;=%WSP+;"
         dfdl:terminator="%NL;"
       />
       <!-- does tiers exist? -->
       <xs:element name="tiersExists" type="xs:string"
-        dfdl:initiator="tiers?%WSP*;&lt;"
+        dfdl:initiator="tiers?%WSP+;&lt;"
         dfdl:terminator="&gt;%NL;"
       />
       <!-- the number of tiers -->
       <xs:element name="numberOfTiers" type="xs:integer"
-        dfdl:initiator="size%WSP*;=%WSP*;"
+        dfdl:initiator="size%WSP+;=%WSP+;"
         dfdl:terminator="%NL;"
       />
       <!-- 'items' is a list of 'item' element -->
@@ -64,7 +64,7 @@
             <!-- 'item' element consists of a header and
                  a list of 'intervals' elemnt -->
             <xs:element name="item"
-              dfdl:initiator="%HT;item%WSP*;"
+              dfdl:initiator="%HT;item%WSP+;"
               minOccurs="0" maxOccurs="unbounded"
               dfdl:occursCountKind="parsed">
               <xs:complexType>
@@ -76,27 +76,27 @@
                     />
                   <!-- the class of the item -->
                   <xs:element name="class" type="xs:string"
-                    dfdl:initiator="%HT;%HT;class%WSP*;=%WSP*;&quot;"
+                    dfdl:initiator="%HT;%HT;class%WSP+;=%WSP+;&quot;"
                     dfdl:terminator="&quot;%NL;"
                   />
                   <!-- the name of the item -->
                   <xs:element name="name" type="xs:string"
-                    dfdl:initiator="%HT;%HT;name%WSP*;=%WSP*;&quot;"
+                    dfdl:initiator="%HT;%HT;name%WSP+;=%WSP+;&quot;"
                     dfdl:terminator="&quot;%NL;"
                   />
                   <!-- the items global start time -->
                   <xs:element name="xMin" type="xs:double"
-                    dfdl:initiator="%HT;%HT;xmin%WSP*;=%WSP*;"
+                    dfdl:initiator="%HT;%HT;xmin%WSP+;=%WSP+;"
                     dfdl:terminator="%NL;"
                   />
                   <!-- the items global end time -->
                   <xs:element name="xMax" type="xs:double"
-                    dfdl:initiator="%HT;%HT;xmax%WSP*;=%WSP*;"
+                    dfdl:initiator="%HT;%HT;xmax%WSP+;=%WSP+;"
                     dfdl:terminator="%NL;"
                   />
                   <!-- the number of intervals contained in the item -->
                   <xs:element name="intervalsSize" type="xs:integer"
-                    dfdl:initiator="%HT;%HT;intervals:%WSP*;size%WSP*;=%WSP*;"
+                    dfdl:initiator="%HT;%HT;intervals:%WSP+;size%WSP+;=%WSP+;"
                     dfdl:terminator="%NL;"
                   />
                   <!-- list of interval elements -->
@@ -112,22 +112,22 @@
                             <xs:sequence>
                               <!-- the sequence number of the interval -->
                               <xs:element name="intervalNum" type="xs:integer"
-                                dfdl:initiator="%HT;%HT;intervals%WSP*;["
+                                dfdl:initiator="%HT;%HT;intervals%WSP+;["
                                 dfdl:terminator="]:%NL;">
                               </xs:element>
                               <!-- the start time of the interval -->
                               <xs:element name="xMin" type="xs:double"
-                                dfdl:initiator="%HT;%HT;%HT;xmin%WSP*;=%WSP*;"
+                                dfdl:initiator="%HT;%HT;%HT;xmin%WSP+;=%WSP+;"
                                 dfdl:terminator="%NL;"
                               />
                               <!-- the end time of the interval -->
                               <xs:element name="xMax" type="xs:double"
-                                dfdl:initiator="%HT;%HT;%HT;xmax%WSP*;=%WSP*;"
+                                dfdl:initiator="%HT;%HT;%HT;xmax%WSP+;=%WSP+;"
                                 dfdl:terminator="%NL;"
                               />
                               <!-- the annotation text of the interval -->
                               <xs:element name="text" type="xs:string"
-                                dfdl:initiator="%HT;%HT;%HT;text%WSP*;=%WSP*;&quot;"
+                                dfdl:initiator="%HT;%HT;%HT;text%WSP+;=%WSP+;&quot;"
                                 dfdl:terminator="&quot;%NL;"
                               />
                             </xs:sequence>
