@@ -4,7 +4,8 @@
   xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/"
   xmlns:ex="http://example.com"
   targetNamespace="http://example.com"
-  elementFormDefault="unqualified">
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
 
 <xs:include schemaLocation="xsd/built-in-formats.xsd" />
 
