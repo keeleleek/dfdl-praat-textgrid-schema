@@ -4,6 +4,10 @@ This is a first try on a  [Data Format Description Language (DFDL)](http://dfdls
 
 The XML schema is not definite yet. Any comments welcome.
 
+## The situation
+
+In many linguistics communities there exists now the need for writing their own parsers and serializers (in DFDL parlour 'unparser') for Praat TextGrid files. Using DFDL for this purpose would remove the need for writing these pieces of software code and would directly make possible integrating TextGrid files in XML-based work-flows. Externalizing this dependency would make it possible to archive original Praat TextGrid data files and also keep them updated when the contained data is updated in any database.
+
 ## XML structure of Praat TextGrid files
 
 The current logical structure of the XML schema of TextGrid files is pictured below. The schema is not definite yet. The structure is meant to be simple and descriptive and map one-to-one to the textual format of TextGrid files.
@@ -57,7 +61,7 @@ The current logical structure of the XML schema of TextGrid files is pictured be
 
 The example data originates from the [Phonetic Corpus of Estonian Spontaneous Speech](http://www.keel.ut.ee/en/languages-resourceslanguages-resources/phonetic-corpus-estonian-spontaneous-speech) (direct link to the [search engine](http://www.murre.ut.ee/otsing/ekskfk.php?select%5B0%5D%5Blayer%5D=word&select%5B0%5D%5Blogic%5D=REGEXP&select%5B0%5D%5Btext%5D=miski&korpused%5B0%5D=dialoogid&korpused%5B1%5D=monoloogid&limit=50&submit=Otsi)).
 
-## How to parse/unparse TextGrid to XML
+## Creating XML from Praat TextGrid files
 
 The DFDL schema has been developed and tested using the open source tool [Daffodil](https://opensource.ncsa.illinois.edu/confluence/display/DFDL).
 
@@ -65,6 +69,8 @@ Parsing the example TextGrid file.
 ```shell
 $ ../bin/daffodil parse --schema ./PraatTextGrid.dfdl.xsd ./examples/ekskfk_miski_1.TextGrid
 ```
+
+## Creating Praat TextGrid files from XML
 
 Un-parsing the parsed example XML infoset back to TextGrid text file.
 
