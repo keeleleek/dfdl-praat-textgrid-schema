@@ -21,7 +21,7 @@
 </xs:annotation>
 
 <!-- The root document element: 'praat' -->
-<xs:element name="praat">
+<xs:element name="praat" dfdl:terminator="%NL;">
   <xs:complexType>
     <!-- Header elements: 'fileType', 'objectClass',
          'xMin', 'xMax', 'tiersExists', 'numberOfTiers' -->
@@ -128,7 +128,7 @@
                               <!-- the annotation text of the interval -->
                               <xs:element name="text" type="xs:string"
                                 dfdl:initiator="%HT;%HT;%HT;text%WSP+;=%WSP+;&quot;"
-                                dfdl:terminator="&quot;%NL;"
+                                dfdl:terminator="&quot;%NL;" nillable="true"
                               />
                             </xs:sequence>
                           </xs:complexType>

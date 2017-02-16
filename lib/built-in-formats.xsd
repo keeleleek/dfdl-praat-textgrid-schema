@@ -16,8 +16,9 @@
 			<dfdl:defineFormat name="daffodilTest1">
 				<dfdl:format ref="daffodilNewProperties1" alignment="1"
 					alignmentUnits="bytes" binaryFloatRep="ieee" binaryNumberRep="binary"
-					byteOrder="bigEndian" 
-					calendarPatternKind="implicit"
+					byteOrder="bigEndian" encodingErrorPolicy="error" textBidi="no"
+					calendarPatternKind="implicit" floating="no"
+					nilKind="literalValue" nilValue="%ES;" useNilForDefault="no" nilValueDelimiterPolicy="both"
 					documentFinalTerminatorCanBeMissing="no" emptyValueDelimiterPolicy="both"
 					encoding="US-ASCII" escapeSchemeRef="" ignoreCase="no"
 					initiatedContent="no" initiator="" leadingSkip="0" lengthKind="implicit"
