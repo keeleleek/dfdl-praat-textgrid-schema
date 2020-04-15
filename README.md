@@ -51,7 +51,7 @@ The current logical structure of the XML schema of TextGrid files is pictured be
           <intervalNum>1</intervalNum>
           <xMin>0</xMin>
           <xMax>2</xMax>
-          <text />
+          <text xsi:nil="true" />
         </interval>
       </intervals>
     </item>
@@ -63,11 +63,13 @@ The example data originates from the [Phonetic Corpus of Estonian Spontaneous Sp
 
 ## Creating XML from Praat TextGrid files
 
-The DFDL schema has been developed and tested using the open source tool [Daffodil](https://opensource.ncsa.illinois.edu/confluence/display/DFDL).
+The DFDL schema has been developed and tested using the open source tool [Apache Daffodil](https://daffodil.apache.org).
 
 Parsing the example TextGrid file.
 ```shell
-$ ../bin/daffodil parse --schema ./PraatTextGrid.dfdl.xsd ./examples/ekskfk_miski_1.TextGrid
+$ daffodil parse -TsuppressSchemaDefinitionWarnings=encodingErrorPolicyError \
+    --schema src/main/resources/com/github/keeleleek/praattextgrid/PraatTextGrid.dfdl.xsd \
+    src/test/resources/examples/ekskfk_miski_1.TextGrid
 ```
 
 ## Creating Praat TextGrid files from XML
@@ -75,5 +77,7 @@ $ ../bin/daffodil parse --schema ./PraatTextGrid.dfdl.xsd ./examples/ekskfk_misk
 Un-parsing the parsed example XML infoset back to TextGrid text file.
 
 ```shell
-$ ../bin/daffodil unparse --schema ./PraatTextGrid.dfdl.xsd ./examples/ekskfk_miski_1.tdml
+$ daffodil unparse -TsuppressSchemaDefinitionWarnings=encodingErrorPolicyError \
+    --schema src/main/resources/com/github/keeleleek/praattextgrid/PraatTextGrid.dfdl.xsd \
+    src/test/resources/examples/ekskfk_miski_1.TextGrid.xml
 ```
