@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tdml:testSuite
+  xmlns="http://example.com"
+  xmlns:daf="urn:ogf:dfdl:2013:imp:daffodil.apache.org:2018:ext"
+  xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/"
+  xmlns:ex="http://example.com"
+  xmlns:tdml="http://www.ibm.com/xmlns/dfdl/testData"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  defaultRoundTrip="onePass"
+  defaultConfig="cfg_no_warn">
+
+  <tdml:defineConfig name="cfg_no_warn">
+    <daf:tunables>
+      <daf:suppressSchemaDefinitionWarnings>
+        encodingErrorPolicyError
+      </daf:suppressSchemaDefinitionWarnings>
+    </daf:tunables>
+  </tdml:defineConfig>
+
+  <tdml:parserTestCase name="ekskfk_miski_1" model="com/github/keeleleek/praattextgrid/PraatTextGrid.dfdl.xsd">
+    <tdml:document>
+      <tdml:documentPart type="file">examples/ekskfk_miski_1.TextGrid</tdml:documentPart>
+    </tdml:document>
+    <tdml:infoset>
+      <tdml:dfdlInfoset type="file">examples/ekskfk_miski_1.TextGrid.xml</tdml:dfdlInfoset>
+    </tdml:infoset>
+  </tdml:parserTestCase>
+
+</tdml:testSuite>

@@ -7,7 +7,7 @@
   elementFormDefault="qualified"
   attributeFormDefault="unqualified">
 
-<xs:include schemaLocation="lib/built-in-formats.xsd" />
+<xs:include schemaLocation="built-in-formats.xsd" />
 
 <xs:annotation>
   <xs:appinfo source="http://www.ogf.org/dfdl/">
