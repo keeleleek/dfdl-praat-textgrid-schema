@@ -4,10 +4,9 @@
   xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/"
   xmlns:ex="http://example.com"
   targetNamespace="http://example.com"
-  elementFormDefault="qualified"
-  attributeFormDefault="unqualified">
+  elementFormDefault="qualified">
 
-<xs:include schemaLocation="lib/built-in-formats.xsd" />
+<xs:include schemaLocation="built-in-formats.xsd" />
 
 <xs:annotation>
   <xs:appinfo source="http://www.ogf.org/dfdl/">

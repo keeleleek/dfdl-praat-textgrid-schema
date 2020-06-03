@@ -1,4 +1,4 @@
-<ex:praat xmlns:ex="http://example.com">
+<ex:praat xmlns:ex="http://example.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ex:fileType>ooTextFile</ex:fileType>
   <ex:objectClass>TextGrid</ex:objectClass>
   <ex:xMin>0.0</ex:xMin>
@@ -82,7 +82,7 @@
           <ex:intervalNum>2</ex:intervalNum>
           <ex:xMin>0.061199346418562</ex:xMin>
           <ex:xMax>0.40788261011471</ex:xMax>
-          <ex:text />
+          <ex:text xsi:nil="true" />
         </ex:interval>
         <ex:interval>
           <ex:intervalNum>3</ex:intervalNum>
@@ -260,7 +260,7 @@
           <ex:intervalNum>2</ex:intervalNum>
           <ex:xMin>0.061199346418562</ex:xMin>
           <ex:xMax>0.40788261011471</ex:xMax>
-          <ex:text />
+          <ex:text xsi:nil="true" />
         </ex:interval>
         <ex:interval>
           <ex:intervalNum>3</ex:intervalNum>
@@ -438,7 +438,7 @@
           <ex:intervalNum>2</ex:intervalNum>
           <ex:xMin>0.061199346418562</ex:xMin>
           <ex:xMax>0.40788261011471</ex:xMax>
-          <ex:text />
+          <ex:text xsi:nil="true" />
         </ex:interval>
         <ex:interval>
           <ex:intervalNum>3</ex:intervalNum>
@@ -526,7 +526,7 @@
           <ex:intervalNum>2</ex:intervalNum>
           <ex:xMin>0.061199346418562</ex:xMin>
           <ex:xMax>0.40788261011471</ex:xMax>
-          <ex:text />
+          <ex:text xsi:nil="true" />
         </ex:interval>
         <ex:interval>
           <ex:intervalNum>3</ex:intervalNum>
@@ -578,7 +578,7 @@
           <ex:intervalNum>2</ex:intervalNum>
           <ex:xMin>0.061199346418562</ex:xMin>
           <ex:xMax>0.40788261011471</ex:xMax>
-          <ex:text />
+          <ex:text xsi:nil="true" />
         </ex:interval>
         <ex:interval>
           <ex:intervalNum>3</ex:intervalNum>
@@ -658,7 +658,7 @@
           <ex:intervalNum>1</ex:intervalNum>
           <ex:xMin>0.0</ex:xMin>
           <ex:xMax>2.0</ex:xMax>
-          <ex:text />
+          <ex:text xsi:nil="true" />
         </ex:interval>
       </ex:intervals>
     </ex:item>
@@ -674,7 +674,7 @@
           <ex:intervalNum>1</ex:intervalNum>
           <ex:xMin>0.0</ex:xMin>
           <ex:xMax>0.061199346418562</ex:xMax>
-          <ex:text />
+          <ex:text xsi:nil="true" />
         </ex:interval>
         <ex:interval>
           <ex:intervalNum>2</ex:intervalNum>
@@ -686,7 +686,7 @@
           <ex:intervalNum>3</ex:intervalNum>
           <ex:xMin>0.40788261011471</ex:xMin>
           <ex:xMax>2.0</ex:xMax>
-          <ex:text />
+          <ex:text xsi:nil="true" />
         </ex:interval>
       </ex:intervals>
     </ex:item>
@@ -702,7 +702,7 @@
           <ex:intervalNum>1</ex:intervalNum>
           <ex:xMin>0.0</ex:xMin>
           <ex:xMax>2.0</ex:xMax>
-          <ex:text />
+          <ex:text xsi:nil="true" />
         </ex:interval>
       </ex:intervals>
     </ex:item>
